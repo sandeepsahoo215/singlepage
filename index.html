@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div>
+        <!-- 3bar menu text and icons -->
+        <div class="main">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </div>
+
+        <div class="main">
+        <span class="span">Cypher</span>
+            <div class="main icons">
+                <i class="fa fa-users" style="font-size:30px; color:#60dcae; padding: 5px;"></i>
+                <i class="fa fa-bell" style="font-size:30px; color:#60dcae; padding: 5px;"></i>
+                <i class="fa fa-search" style="font-size:30px; color:#60dcae; padding: 5px;"></i>
+                <i class="fa fa-gear" style="font-size:30px; color:#60dcae; padding: 5px;"></i>
+            </div>
+        </div>
+        <!-- dashboard and floting lists -->
+        <div class="dash">
+            <div class="pcicon">
+                <div class="pc2">
+                    <i class="fa fa-minus" style=" color: white; padding: 2px;"></i>
+                    <i class="fa fa-window-restore" style=" color: white; padding: 2px;"></i>
+                    <i class="fa fa-close" style=" color: white; padding: 2px;"></i>
+                </div>
+                
+            </div>
+            
+                <div class="dashboard">
+                
+                    <i class="fa fa-desktop" style="font-size:24px; color:#60dcae; margin:  10px;"></i>
+                    <span class="span2">Dashboard</span>
+                    <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 100px;"></i>
+                
+                </div>
+                <div class="dashboard">
+                    <div class="btnd">
+                        <button class="sp3">What's trending</button>
+                        <button class="sp3">Company Profile</button>
+                        <button class="sp3">Hs Code Analysis</button>
+                        <button class="sp3">Country Analysis</button>
+                        <button class="sp3">Port Analysis</button>
+                        <button class="sp3">Custom Anakysis</button>
+                    </div>
+
+                </div>
+        
+        </div>
+        <!-- left side column and  filter-->
+        <div>
+            <div class="side-fil" style="position: fixed;">
+                <div>
+                    <div class="cus-fil">
+                        <i class="fa fa-filter" style="font-size:24px; margin:10px; color: white;"></i>
+                        <span>Custom filter</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <table border="1" style="border-collapse: collapse;" class="tr">
+                            <tr>
+                                <td>Exporter name <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 138px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Importer name <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 138px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Country of Destination <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 89px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>HS Code <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 176px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>HS Code Description <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 100px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Port of Discharge <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 122px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Port of Loading <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 135px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Mode of Port <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 150px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>UQC <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 200px;"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Quantity <i class="fa fa-angle-down" style="font-size:24px; color: black;margin-left: 180px;"></i></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="side-fil" style="margin-left: 300px; margin-top: 10px;">
+                <div>
+                    <div class="arrow"><i class="fa fa-angle-left" style="font-size:24px; color: white;"></i></div>
+                </div>
+                <div class="search-box">
+                <form class="form">
+                    <label>Type</label>
+                    <input class="input" type="text" placeholder="Export">
+                    <button class="ico"><i class="fa fa-search"></i></button>
+                </form>
+                <form class="form">
+                    <label>Country</label>
+                    <input class="input" type="text" placeholder="India">
+                    <button class="ico"><i class="fa fa-search"></i></button>
+                </form>
+                <form class="form">
+                    <label>Period</label>
+                    <input class="input" type="text" placeholder="">
+                    <button class="ico"><i class="fa fa-search"></i></button>
+                </form>
+                <hr></hr>
+                <div>
+                    <form class="form">
+                        <select style="width:190px ;" class="input noicon formtwo">
+                          <option value="" disabled selected hidden>Traffic Code</option>
+                          <option value="rigatoni">2 digit</option>
+                          <option value="dave">4 digit</option>
+                          <option value="pumpernickel">6 digit</option>
+                        </select>
+                        <!-- <input class="input noicon formtwo" type="text" placeholder="Traffic code"> -->
+                        
+                    </form>
+                    <form class="form">
+        
+                        <input class="input formtwo" type="text" placeholder="Select Product">
+                        <button class="ico"><i class="fa fa-search"></i></button>
+                    </form> 
+                    <form class="form">
+                        <button class="src">Search</button>
+                    </form>
+                </div>
+                <div>
+                    <form class="form">
+        
+                        <input class="input formtwo" type="text" placeholder="Select Product">
+                        <button class="ico"><i class="fa fa-search"></i></button>
+                    </form> 
+                    <form class="form">
+        
+                        <input class="input formtwo" type="text" placeholder="Select Product">
+                        <button class="ico"><i class="fa fa-search"></i></button>
+                    </form> 
+                    <form class="form">
+                        <button class="src">Search</button>
+                    </form>
+
+                </div>
+                <div class="sr3">
+                    <i class="fa fa-angle-up" style="font-size:40px"></i>
+                </div>
+
+                <div class="row">
+                    <div class="but" style="position: fixed;">
+                        <button class="src">Record 12094</button>
+                        <button class="src bht">Code 12094</button>
+                        <button class="src bht">Exporters 12094</button>
+                        <button class="src bht">Importers 12094</button>
+                        <button class="src bht">Country 12094</button>
+                        <button class="src bht">Record 12094</button>
+                    </div>
+                    <div class="but" style="margin-left:650px ;">
+                       <div class="list">
+                        <i class="fa fa-bookmark" style="font-size:30px; color: #60dcae; padding-right: 0px;"></i>
+                        <i class="fa fa-arrow-circle-down" style="font-size:30px; color: #60dcae; padding-right: 0px;"></i>
+                        <i class="fa fa-angle-left" style="font-size:36px;padding-right: 0px;"></i>
+                        <button class="five">5</button>
+                        <i class="fa fa-angle-right" style="font-size:36px;padding-right: 0px;"></i>
+                        <span>Per Page</span>
+                        <span>50 <i class="fa fa-angle-down" style="font-size:36px;padding-right: 0px;"></i> </span>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+                    
+        </div>
+            <div class="tabletwo">
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    
+                    <thead class="thead">
+                    <tr>
+                    <th height="40">Date</th>
+                    <th>HS Code</th>
+                    <th width="200">Product</th>
+                    <th>Quantity</th>
+                    <th>Value</th>
+                    <th>UQC</th>
+                    <th>Currency</th>
+                    <th>Unit Price</th>
+                    <th>SB NO</th>
+                    <th>SB Date</th>
+                    <th>Ex Rate</th>
+                    </tr>
+                    </thead>
+                    
+                </table>
+            </div>
+    </div>
+            
+            
+
+
+
+        
+
+</body>
+</html>
